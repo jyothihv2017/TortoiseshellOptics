@@ -81,26 +81,12 @@ a{
   padding: 1.5rem 5rem;
 }
 
-.iconContent{
-  display: flex;
-  justify-content: center;
-  height: 14rem;
-  width: 100%;
-}
-
-.icon{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.iconContent img{
-padding: 3rem 3rem;
-}
 
 .bottomCaption{
   caption-side: bottom;
 }
+
+
 
 #paper{
   width: 3.5rem;
@@ -125,7 +111,7 @@ padding: 3rem 3rem;
 .philosophy{
   text-align: center;
 height:auto;
-margin-left: 5%;
+margin-left: 2.5%;
   width: 50%;
   margin-bottom: 5rem;
 }
@@ -134,7 +120,7 @@ margin-left: 5%;
   text-align: center;
   height:auto;
   margin-bottom: 5rem;
-  margin-right: 5%
+  margin-right: 2.5%;
   width: 50%;
 }
 
@@ -179,7 +165,69 @@ margin-left: 1rem;
   display: none;
 }
 
+@media only screen AND (min-width: 480px){
+
+
+  figcaption{
+    font-size: 1rem;
+    float: right;
+  }
+
+
+.iconContent{
+  display: flex;
+  justify-content: center;
+  height: 14rem;
+  width: 100%;
+}
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.iconContent img{
+padding: 3rem 3rem;
+}
+
+footer figcaption{
+/*  display: flex;
+  flex-direction: column;
+align-items: : center;*/
+margin-top: 4.25rem;
+margin-left: 1rem;
+}
+
+}
+
 @media only screen AND (max-width: 1024px){
+
+  figcaption{
+    font-size: 1rem;
+    float: right;
+  }
+
+
+  .iconContent{
+    display: flex;
+    justify-content: center;
+    height: 14rem;
+    width: 100%;
+  }
+
+  .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .iconContent img{
+  padding: 3rem 3rem;
+  }
+
 
   .siteContent{
     display: flex;
@@ -218,6 +266,13 @@ margin-left: 1rem;
     color: black;
     padding: .75rem 4rem;
   }
+  footer figcaption{
+  /*  display: flex;
+    flex-direction: column;
+  align-items: : center;*/
+  margin-top: 4.25rem;
+  margin-left: 1rem;
+  }
 
 }
 
@@ -227,6 +282,11 @@ margin-left: 1rem;
   nav{
     display: none;
   }
+
+  header figcaption{
+  display: none;
+  }
+
 
   .button {
     background-color: cadetblue;
@@ -251,13 +311,26 @@ margin-left: 1rem;
   .iconContent{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 3.77rem;
     margin-bottom: 3.77rem;
     height: auto;
     width: 100%;
   }
-  
+
+  .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .iconContent img{
+  padding: 3rem 3rem;
+  }
+
+
   .slogan p{
     position: absolute;
     top: 9rem;
@@ -305,12 +378,15 @@ margin-left: 1rem;
     text-align: center;
   }
 
-  p{
+   .philosophy-times{
     margin-top: 1rem;
     margin-bottom: 4rem;
     font-size: 0.77rem;
   }
 
+  header figcaption{
+  display: none;
+  }
 
 
 }
